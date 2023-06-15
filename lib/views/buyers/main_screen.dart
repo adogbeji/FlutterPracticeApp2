@@ -16,6 +16,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _pageIndex,
         unselectedItemColor: Colors.black,
         selectedItemColor: Colors.yellow.shade900,
         items:  [
@@ -27,17 +28,21 @@ class _MainScreenState extends State<MainScreen> {
             icon: SvgPicture.asset('assets/icons/explore.svg', width: 20,),
             label: 'CATEGORIES',
           ),
-          const BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'Home',
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset('assets/icons/shop.svg'),
+            label: 'STORE',
           ),
-          const BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'Home',
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset('assets/icons/cart.svg'),
+            label: 'CART',
           ),
-          const BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'Home',
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset('assets/icons/search.svg'),
+            label: 'SEARCH',
+          ),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset('assets/icons/account.svg'),
+            label: 'ACCOUNT',
           ),
         ],
       ),
