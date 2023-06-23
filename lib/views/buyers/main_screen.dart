@@ -68,6 +68,7 @@ class _MainScreenState extends State<MainScreen> {
           ),
         ],
       ),
+      body: _pages[0],
     );
   }
 }
