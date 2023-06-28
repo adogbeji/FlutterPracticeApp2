@@ -5,10 +5,17 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: const <Widget>[
-        Text('How are you?'),
-      ],
+    return Padding(
+      padding: EdgeInsets.only(
+        top: MediaQuery.of(context).padding.top,
+        left: 25,
+        right: 15,
+      ),
+      child: Row(
+        children: const <Widget>[
+          Text('How are you?'),
+        ],
+      ),
     );
   }
 }
