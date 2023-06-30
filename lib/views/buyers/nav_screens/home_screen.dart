@@ -13,7 +13,10 @@ class HomeScreen extends StatelessWidget {
       ),
       child: Row(
         children: const <Widget>[
-          Text('How are you?'),
+          Text(
+            'How are you? 👀',
+            style: TextStyle(fontSize: 23),
+          ),
         ],
       ),
     );
