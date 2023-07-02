@@ -12,15 +12,19 @@ class HomeScreen extends StatelessWidget {
         left: 25,
         right: 15,
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          const Text(
-            'How are you? 👀',
-            style: TextStyle(fontSize: 23),
-          ),
-          Container(
-            child: SvgPicture.asset('assets/icons/cart.svg', width: 20,)
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              const Text(
+                'How are you? 👀',
+                style: TextStyle(fontSize: 23),
+              ),
+              Container(
+                child: SvgPicture.asset('assets/icons/cart.svg', width: 20,)
+              ),
+            ],
           ),
         ],
       ),
