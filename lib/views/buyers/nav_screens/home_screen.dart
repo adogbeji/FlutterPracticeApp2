@@ -28,8 +28,12 @@ class HomeScreen extends StatelessWidget {
           ),
           const TextField(
             decoration: InputDecoration(
+              fillColor: Colors.blueAccent,
+              filled: true,
               hintText: 'Search for products...',
-              border: OutlineInputBorder(),
+              border: OutlineInputBorder(
+                borderSide: BorderSide.none,
+              ),
             ),
           ),
         ],
