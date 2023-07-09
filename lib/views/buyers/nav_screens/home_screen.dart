@@ -22,17 +22,22 @@ class HomeScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 23),
               ),
               Container(
-                child: SvgPicture.asset('assets/icons/cart.svg', width: 20,)
-              ),
+                  child: SvgPicture.asset(
+                'assets/icons/cart.svg',
+                width: 20,
+              )),
             ],
           ),
-          const TextField(
-            decoration: InputDecoration(
-              fillColor: Colors.blueAccent,
-              filled: true,
-              hintText: 'Search for products...',
-              border: OutlineInputBorder(
-                borderSide: BorderSide.none,
+          ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: const TextField(
+              decoration: InputDecoration(
+                fillColor: Colors.blueAccent,
+                filled: true,
+                hintText: 'Search for products...',
+                border: OutlineInputBorder(
+                  borderSide: BorderSide.none,
+                ),
               ),
             ),
           ),
