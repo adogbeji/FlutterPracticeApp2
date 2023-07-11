@@ -30,13 +30,17 @@ class HomeScreen extends StatelessWidget {
           ),
           ClipRRect(
             borderRadius: BorderRadius.circular(10),
-            child: const TextField(
+            child: TextField(
               decoration: InputDecoration(
-                fillColor: Colors.blueAccent,
+                fillColor: Colors.grey.shade300,
                 filled: true,
                 hintText: 'Search for products...',
-                border: OutlineInputBorder(
+                border: const OutlineInputBorder(
                   borderSide: BorderSide.none,
+                ),
+                prefixIcon: Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: SvgPicture.asset('assets/icons/search.svg'),
                 ),
               ),
             ),
