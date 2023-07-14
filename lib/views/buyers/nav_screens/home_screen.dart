@@ -14,20 +14,7 @@ class HomeScreen extends StatelessWidget {
       ),
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              const Text(
-                'How are you? 👀',
-                style: TextStyle(fontSize: 23),
-              ),
-              Container(
-                  child: SvgPicture.asset(
-                'assets/icons/cart.svg',
-                width: 20,
-              )),
-            ],
-          ),
+          const WelcomeText(),
           const SizedBox(
             height: 9,
           ),
@@ -50,6 +37,31 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+class WelcomeText extends StatelessWidget {
+  const WelcomeText({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: <Widget>[
+        const Text(
+          'How are you? 👀',
+          style: TextStyle(fontSize: 23),
+        ),
+        Container(
+          child: SvgPicture.asset(
+            'assets/icons/cart.svg',
+            width: 20,
+          ),
+        ),
+      ],
     );
   }
 }
