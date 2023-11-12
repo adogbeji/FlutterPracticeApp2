@@ -14,6 +14,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: [
           const BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.home),
@@ -25,6 +26,18 @@ class _MainScreenState extends State<MainScreen> {
               width: 20,
             ),
             label: 'CATEGORIES',
+          ),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset('assets/icons/shop.svg', width: 20,),
+            label: 'STORE',
+          ),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset('assets/icons/cart.svg'),
+            label: 'CART',
+          ),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset('assets/icons/account.svg'),
+            label: 'ACCOUNT',
           ),
         ],
       ),
