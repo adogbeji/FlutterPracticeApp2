@@ -52,19 +52,31 @@ class _MainScreenState extends State<MainScreen> {
             label: 'CATEGORIES',
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset('assets/icons/shop.svg', width: 20,),
+            icon: SvgPicture.asset(
+              'assets/icons/shop.svg',
+              width: 20,
+            ),
             label: 'STORE',
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset('assets/icons/cart.svg', width: 20,),
+            icon: SvgPicture.asset(
+              'assets/icons/cart.svg',
+              width: 20,
+            ),
             label: 'CART',
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset('assets/icons/search.svg', width: 20,),
+            icon: SvgPicture.asset(
+              'assets/icons/search.svg',
+              width: 20,
+            ),
             label: 'SEARCH',
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset('assets/icons/account.svg', width: 20,),
+            icon: SvgPicture.asset(
+              'assets/icons/account.svg',
+              width: 20,
+            ),
             label: 'ACCOUNT',
           ),
         ],
