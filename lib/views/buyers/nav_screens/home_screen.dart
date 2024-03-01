@@ -6,28 +6,36 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        Padding(
-          padding: EdgeInsets.only(
-            top: MediaQuery.of(context).padding.top,
-            left: 25,
-            right: 15,
-          ),
-          child: const Text(
-            'What are you looking for 👀?',
-            style: TextStyle(
-              fontSize: 22,
-              fontWeight: FontWeight.bold,
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.only(
+                top: MediaQuery.of(context).padding.top,
+                left: 25,
+                right: 15,
+              ),
+              child: const Text(
+                'What are you looking for 👀?',
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
-          ),
+            Container(
+              child: SvgPicture.asset(
+                'assets/icons/cart.svg',
+                width: 20,
+              ),
+            ),
+          ],
         ),
-        Container(
-          child: SvgPicture.asset(
-            'assets/icons/cart.svg',
-            width: 20,
-          ),
-        ),
+
+        // SEARCH BAR
+        TextField(),
       ],
     );
   }
