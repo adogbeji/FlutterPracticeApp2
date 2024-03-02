@@ -35,7 +35,14 @@ class HomeScreen extends StatelessWidget {
         ),
 
         // SEARCH BAR
-        TextField(),
+        const TextField(
+          decoration: InputDecoration(
+            hintText: 'Search For Products...',
+            border: OutlineInputBorder(
+              borderSide: BorderSide.none,
+            ),
+          ),
+        ),
       ],
     );
   }
