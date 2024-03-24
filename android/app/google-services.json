@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "977038116255",
+    "project_id": "practice-app-2-ef600",
+    "storage_bucket": "practice-app-2-ef600.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977038116255:android:e57769281e0f77da3629aa",
+        "android_client_info": {
+          "package_name": "com.akponasa.practice_app_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKQBigekN3Sm3ecZ3xvaFgeAHEhgXlsts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
