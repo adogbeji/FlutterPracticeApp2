@@ -43,8 +43,12 @@ class HomeScreen extends StatelessWidget {
               border: const OutlineInputBorder(
                 borderSide: BorderSide.none,
               ),
-              fillColor: Colors.blueGrey.shade200,
+              fillColor: Colors.grey.shade300,
               filled: true,
+              prefixIcon: Padding(
+                padding: const EdgeInsets.all(14.0),
+                child: SvgPicture.asset('assets/icons/search.svg',),
+              ),
             ),
           ),
         ),
