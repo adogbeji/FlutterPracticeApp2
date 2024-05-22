@@ -12,20 +12,31 @@ class HomeScreen extends StatelessWidget {
         left: 25,
         right: 15,
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Column(
         children: [
-          const Text(
-            'What are you looking for? 👀',
-            style: TextStyle(
-              fontSize: 19,
-              fontWeight: FontWeight.bold,
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                'What are you looking for? 👀',
+                style: TextStyle(
+                  fontSize: 19,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                child: SvgPicture.asset(
+                  'assets/icons/cart.svg',
+                  width: 20,
+                ),
+              ),
+            ],
           ),
-          Container(
-            child: SvgPicture.asset(
-              'assets/icons/cart.svg',
-              width: 20,
+          
+          // SEARCH BAR
+          const TextField(
+            decoration: InputDecoration(
+              labelText: 'Search For Products...',
             ),
           ),
         ],
