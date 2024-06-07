@@ -36,7 +36,13 @@ class HomeScreen extends StatelessWidget {
           // SEARCH BAR
           const TextField(
             decoration: InputDecoration(
+              fillColor: Colors.white,
+              filled: true,
               labelText: 'Search For Products...',
+              hintText: 'Search Here',
+              border: OutlineInputBorder(
+                borderSide: BorderSide.none,
+              ),
             ),
           ),
         ],
