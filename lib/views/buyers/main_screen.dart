@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
 
-import 'package:practice_app_2/views/buyers/nav_screens/home_screens.dart';
+import 'package:practice_app_2/views/buyers/nav_screens/home_screen.dart';
 import 'package:practice_app_2/views/buyers/nav_screens/category_screen.dart';
 import 'package:practice_app_2/views/buyers/nav_screens/store_screen.dart';
 import 'package:practice_app_2/views/buyers/nav_screens/cart_screen.dart';
